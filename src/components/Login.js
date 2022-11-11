@@ -12,11 +12,11 @@ function Login() {
     <LoginContainer>
       <LoginInnerContainer>
         <img
-          src="https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg"
+          src="https://uploads-ssl.webflow.com/60098c5b239e4890fa5ee1aa/606b2be6af0a4267f12e4e23_airnfts-logo-small.svg"
           alt="This slack logo"
         />
-        <h1>Sign in to the BB Fam</h1>
-        <p>bb.slack.com</p>
+        <h1>Sign in to the BINGO Chat</h1>
+        <p></p>
 
         <Button onClick={signIn}>Sign in with Google</Button>
       </LoginInnerContainer>
@@ -27,7 +27,14 @@ function Login() {
 export default Login;
 
 const LoginContainer = styled.div`
-  background-color: #f8f8f8;
+  background-image: linear-gradient(
+    to right top,
+    #b7e2ea,
+    #5ab8de,
+    #008ad6,
+    #0056c2,
+    #380997
+  );
   height: 100vh;
   display: grid;
   place-items: center;
@@ -36,7 +43,7 @@ const LoginContainer = styled.div`
 const LoginInnerContainer = styled.div`
   padding: 100px;
   text-align: center;
-  background-color: white;
+  background-color: #b7e2ea;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 

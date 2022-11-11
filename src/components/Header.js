@@ -40,7 +40,7 @@ const HeaderSearch = styled.div`
   flex: 0.4;
   opacity: 1;
   border-radius: 6px;
-  background-color: #421f44;
+  background-color: #fff;
   text-align: center;
   display: flex;
   padding: 0 50px;
@@ -64,7 +64,7 @@ const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  background-color: var(--slack-color);
+  background-color: #274cb5;
   color: white;
 `;
 

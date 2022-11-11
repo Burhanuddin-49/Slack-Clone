@@ -1,5 +1,6 @@
 import {
   Add,
+  AddBox,
   Apps,
   BookmarkBorder,
   Create,
@@ -27,7 +28,7 @@ function Sidebar() {
     <SidebarContainer>
       <SidebarHeader>
         <SidebarInfo>
-          <h2>PAPA FAM HQ</h2>
+          <h2>BINGO chat</h2>
           <h3>
             <FiberManualRecord />
             {user?.displayName}
@@ -36,6 +37,7 @@ function Sidebar() {
         <Create />
       </SidebarHeader>
 
+      <SidebarOption Icon={AddBox} title="Post" />
       <SidebarOption Icon={InsertComment} title="Threads" />
       <SidebarOption Icon={Inbox} title="Mentions & reactions" />
       <SidebarOption Icon={Drafts} title="Saved items" />
@@ -59,11 +61,20 @@ export default Sidebar;
 
 const SidebarContainer = styled.div`
   color: white;
-  background-color: var(--slack-color);
+  background-color: #274cb5;
+  /* background-image: linear-gradient(
+    to right top,
+    #b7e2ea,
+    #5ab8de,
+    #008ad6,
+    #0056c2,
+    #380997
+  ); */
   flex: 0.3;
   border-top: 1px solid #49274b;
   max-width: 260px;
   margin-top: 60px;
+  height: 200vh;
 
   > hr {
     margin-top: 10px;
